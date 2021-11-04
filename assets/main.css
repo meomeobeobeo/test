@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Comfortaa',sans-serif;
+    font-weight: 600;
+
+}
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color:#111;
+   
+}
+#app{
+    margin:  auto;
+   width: 375px;
+    
+   background-color: #fff;
+    
+   
+   
+}
+.nav{
+
+    position:fixed;
+
+    z-index: 9999999;
+    width: 375px;
+    display: flex;
+    justify-content:space-between; 
+    padding: 8px 8px;
+    
+   
+
+}
+.now_activity {
+    color: #ef276a;
+    text-align: center;
+   
+}
+.nav .nav1,.nav3{
+   font-size: 32px;
+   color: #ef276a;
+
+}
+.song:active{
+    opacity: 0.2;
+}
+
+.dashboard{
+    position: fixed;
+    width: 375px;
+    background-color: aliceblue;
+    z-index: 10000;
+    
+}
+.back,.next{
+    color: #111;
+    display: block;
+    padding:8px 8px;
+}
+.cd{
+    display: flex;
+    margin: 80px 80px;
+}
+
+.picture{
+    width: 200px;;
+    
+    margin: auto auto;
+    background-color: #333;
+    padding-top: 200px;
+    background-image: url("/assets/img/meomeo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 0 4px;
+
+}
+.activityBar{
+    width:100%;
+    color: #ef276a;
+}
+.statusBar{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16px;
+    padding: 12px 8px;
+    font-size: 20px;
+}
+.control{
+   background-color:#ef276a;
+   color:#fff;
+   font-size: 24px;
+   padding: 18px 18px;
+   border-radius:50%;
+   display: block;
+}
+.progressBar{
+    width: 100%;
+    padding :12px 8px;
+    display: block;
+    
+}
+.pause{
+    display: none;
+    padding: 0px 4px;
+   
+}
+.playing{
+    display: none;
+}
+.active{
+    display: block;
+}
+.progress {
+    width: 100%;
+      -webkit-appearance: none;
+    height: 10px;
+    background: #d6c7c7;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+  }
+  
+  .progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 6px;
+    background-color:#ef276a;
+    cursor: pointer;
+  }
+  .reload{
+      color:rgb(109, 106, 106)
+
+  }
+  .active-btn{
+      color:#ef276a
+  }
+  .audio_progress{
+      width: 100%;
+      padding: 4px 4px;
+      margin-top: 500px;
+      z-index: 0;
+  }
+  .song{
+
+    width: 100%;
+    min-height: 48px;
+    background-color: #111;
+    box-shadow: 0 1px 2px rgb(131, 123, 123);
+    display:flex;
+    color: #ef276a;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+  }
+  .head_song{
+    width:18%;
+    display: flex;
+    padding:8px 8px ;
+  }
+  .songpicture{
+      padding-top:100%;
+      width: 100%;
+     
+      background-image: url(/assets/img/picture1.jpg);
+      background-size: cover;
+      border-radius:50%;
+      
+      
+  }
+  .nameSong{
+      width:80%;
+     
+      font-family:'Comfortaa',sans-serif;
+      font-weight: 600;
+      border-left: 4px solid #ef276a;
+      padding: 8px 12px;
+      margin-left: 4px;
+  }
+  .songActive{
+      color: rgb(19, 18, 18);
+     background-color: rgb(153, 148, 148);
+      
+  }
+  .moreinfor{
+      width:10%;
+
+
+  }
+  .moreinfor .icon{
+      padding: 4px 10px;
+      color: #fff;
+  }
+  
+
